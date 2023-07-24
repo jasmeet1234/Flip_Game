@@ -1,0 +1,27 @@
+@keyframes timer {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+.running {
+  animation-play-state: running !important;
+}
+
+.timer-con {
+  width: 100%;
+  height: 2vh;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  background-color: #c79fdc;
+}
+.timer-ele {
+  height: 100%;
+  width: 100%;
+  background-color: #0066d8;
+  transform: translateX(-100%);
+}

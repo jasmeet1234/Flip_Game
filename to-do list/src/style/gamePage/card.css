@@ -1,0 +1,89 @@
+.easy-mode,
+.hard-mode {
+  height: 100%;
+  width: 100%;
+  background-color: #272525;
+  overflow: hidden;
+  position: relative;
+}
+
+.game-card {
+  perspective: 1000px;
+  position: relative;
+  cursor: pointer;
+  outline: 3px solid #272525;
+}
+
+.game-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.game-card.flipped .game-card-inner {
+  transform: rotateY(180deg);
+}
+
+.game-card.matched .game-card-inner {
+  transform: rotateY(180deg);
+}
+
+.game-card-front,
+.game-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.game-card-front {
+  background: url("../../assets/cardBack/cardBack.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+  transform-origin: center;
+}
+
+.game-card-back {
+  background: url("../../assets/cardBack/cardFront.jpg");
+
+  background-size: cover;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-card-back img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-cont {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Easy Mode */
+
+.easy-mode > .card-cont > .game-card {
+  width: 25%;
+  height: 25%;
+}
+/* Hard mode */
+.hard-mode > .card-cont > .game-card {
+  width: 16.6666666667%;
+  height: 16.6666666667%;
+}

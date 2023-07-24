@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Game";
+  src: url("../../assets/fonts/Game.otf") format("opentype");
+}
+@font-face {
+  font-family: "Game_small";
+  src: url("../../assets/fonts/Game_small.ttf") format("truetype");
+}
+
+.game_font {
+  font-family: "Game";
+  font-size: 7.5rem;
+  color: #f7d0ad;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+}
+.game_font_small {
+  font-family: "Game_small";
+  color: wheat;
+}
+.game_font_mid {
+  font-family: "Game";
+  color: #ed891d;
+}
+.pause_font {
+  font-family: "Game";
+  color: #f7d0ad;
+  font-size: 2.8rem;
+}
+.game_font_inst {
+  font-family: "Game_small";
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
