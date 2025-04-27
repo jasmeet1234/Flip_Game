@@ -64,11 +64,11 @@ These figures provide players with feedback on their performance, visible in the
 ---
 
 ## Snapshots
-![Start Page](Snapshots/pic1.png)
+<img src="snapshots/pic1.png" alt="Game Grid" width="400px">
 
-![User Stats](Snapshots/pic2.png)
+<img src="snapshots/pic2.png" alt="Game Grid" width="400px">
 
-![Gameplay](Snapshots/pic3.png)
+<img src="snapshots/pic3.png" alt="Game Grid" width="400px">
 
 ---
 
