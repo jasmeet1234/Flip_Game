@@ -64,7 +64,11 @@ These figures provide players with feedback on their performance, visible in the
 ---
 
 ## Snapshots
+![Start Page](Snapshots/pic1.png)
 
+![User Stats](Snapshots/pic2.png)
+
+![Gameplay](Snapshots/pic3.png)
 
 ---
 
