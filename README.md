@@ -1,6 +1,8 @@
 # FLIP: Memory Matching Game
 
-Flip is a web-based memory matching game developed using React.js as part of my hands-on learning process in modern frontend frameworks. The project focuses on applying component-driven development, state management with React Hooks, and responsive design principles. Through building Flip, I strengthened my skills in interactive UI design, dynamic data handling, and scalable frontend architecture.
+Flip is a web-based memory matching game developed using React.js during my learning journey with modern frontend frameworks. The project focuses on applying component-driven development, dynamic state management, and responsive design principles. Flip offers an engaging way to test matching skills while demonstrating technical proficiency in building scalable, interactive interfaces.
+
+A live version of the project is available here: [Flip - Memory Matching Game](https://jasmeetflip.netlify.app/)
 
 ---
 
@@ -10,58 +12,66 @@ Flip is a web-based memory matching game developed using React.js as part of my 
 - Gameplay Mechanics
 - Technical Architecture
 - User Statistics and Tracking
-
+- Snapshots
+- Compatibility
 ---
 
 ## Introduction
-Flip was designed and built while I was learning React.js, with the goal of practicing core frontend development concepts in a project-driven environment.  
-The game challenges players to find and match pairs of hidden cards, offering different levels of difficulty. It emphasizes clean component structure, efficient state handling, and user-centric interactive design.
+Flip was built to practice the concepts of React.js including state management using Hooks, component-based design, and building dynamic, responsive web applications. The project demonstrates frontend problem-solving skills, user experience considerations, and adaptive layout handling for cross-device compatibility.
 
 ---
 
 ## Features and Game Modes
 
 ### Casual Mode
-Designed for a quick and relaxed experience, this mode presents a limited set of cards, enabling players to get familiar with the game's mechanics while maintaining a smooth flow of interaction.
+A simple and relaxed game mode with a limited number of cards, intended for players to get familiar with the mechanics and flow of the game.
 
 ### Hard Mode
-An advanced difficulty level where the number of cards increases significantly, offering a more complex grid and demanding greater focus on matching patterns within larger datasets.
+An advanced mode featuring a significantly larger grid of cards, designed to offer a higher challenge through greater complexity and larger memory load.
 
 ---
 
 ## Gameplay Mechanics
-- Players select a game mode (Casual or Hard).
-- A randomized grid of facedown cards is generated.
+- Players choose between Casual and Hard mode.
+- Cards are displayed face down and randomized for each new session.
 - Clicking two cards reveals them:
-  - A match leaves the cards face up.
-  - A mismatch causes them to flip back after a short interval.
-- The goal is to match all card pairs in the fewest number of moves and minimum time.
+  - Matched cards remain face-up.
+  - Mismatched cards are flipped back after a brief delay.
+- Players aim to match all pairs with the fewest moves and shortest time possible.
 
-Gameplay state is dynamically updated using React Hooks to ensure a responsive, smooth user experience.
+The game dynamically updates the internal state and game statistics after every interaction, ensuring smooth and consistent gameplay.
 
 ---
 
 ## Technical Architecture
-- **Frontend Framework:** React.js with functional components and React Hooks (useState, useEffect).
-- **State Management:** Local state handles card matching logic, timer, and user statistics.
-- **UI Design:** Built with HTML5, CSS3, and React's JSX templating, styled for responsiveness across devices.
-- **Session Management:** Pause and resume functionality maintains session integrity without page reload.
+- **Frontend Framework:** React.js with functional components and Hooks (useState, useEffect).
+- **State Management:** Local state-driven management of game grid, matched pairs, timers, and user statistics.
+- **Responsive Design:** Built with dynamic CSS Flexbox and Grid Layouts for seamless mobile and desktop compatibility.
+- **Session Handling:** Pause and Resume functionality preserves in-progress games by freezing and restoring session states.
 
 ---
 
 ## User Statistics and Tracking
-The game tracks and displays important player statistics in real time:
-
+The game tracks key performance indicators during gameplay:
 - **Total Cards Flipped**
-- **Matched Cards**
+- **Matched Pairs**
 - **Games Won**
 - **Games Lost**
 - **Games Abandoned**
 
-These metrics are updated dynamically as the player progresses through each session.
+These figures provide players with feedback on their performance, visible in the in-game dashboard.
 
 ---
 
-**Thank you for checking out Flip — a practical React.js learning project built with a focus on clean structure, responsive design, and interactive frontend functionality.**
+## Snapshots
+
+
+---
+
+## Compatibility
+Flip is fully responsive and mobile-compatible. The dynamic layout adapts fluidly across a variety of device sizes, ensuring a smooth and accessible user experience on smartphones, tablets, and desktops.
+
+**Explore the live demo here:** [Flip - Memory Matching Game](https://jasmeetflip.netlify.app/)  
+Happy matching! 🎮✨
 
 ---
